@@ -43,6 +43,10 @@ export default function TicketForm() {
           onChange={(e) => setDescription(e.target.value)}
         ></textarea>
       </div>
+
+      <fieldset className="priority-fieldset">
+        <legend>Priority</legend>
+      </fieldset>
     </form>
   );
 }
