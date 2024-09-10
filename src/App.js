@@ -6,7 +6,7 @@ import ticketReducer from "./reducers/ticketReducer";
 import TicketList from "./components/TicketList";
 
 function App() {
-  const initialState = { tickets: [] };
+  const initialState = { tickets: [], editingTicket: null };
 
   const [state, dispatch] = useReducer(ticketReducer, initialState);
 
