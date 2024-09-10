@@ -26,7 +26,8 @@ function TicketItem({ ticket, dispatch }) {
         className="button"
         onClick={() =>
           dispatch({
-            /* Edit */
+            type: "SET_EDITING_TICKET",
+            payload: ticket,
           })
         }
       >
